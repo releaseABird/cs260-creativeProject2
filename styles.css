@@ -36,24 +36,57 @@
 .page{
   display: flex;
   align-items: center;
+  margin: auto;
 }
 .generate-box{
   display:flex;
   align-items: center;
 }
 button {
-  background-image: url(images/button.PNG);
+  background-image: url(images/button.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /* put the height and width of your image here */
-  height: 50px;
-  width: 200px;
+  height: 242px;
+  width: 609px;
   border: none;
+  -webkit-appearance: none;
+
 }
+
+button:hover {
+  background-image: url(images/button-click.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 242px;
+  width: 609px;
+  border: none;
+  -webkit-appearance: none;
+
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 button span {
   display: none;
 }
+
+.color-boxes {
+  width: 90%;
+  padding:1.5em;
+  margin-left: 1.5em;
+  display: flex;
+}
+
+.color-box{
+
+}
+
+.color-boxes .color-box .img { width: 100%; height: 100%; background-color: #C60; }
+.dashboard-buttons .sessions .img { -webkit-mask-image: url(/images/color_block.png); }
 
 /* Mobile Styles */
 @media only screen and (max-width: 401px) {}

@@ -1,16 +1,20 @@
 * {
-  margin: 0;
+  margin: 1em;
   padding: 0;
   box-sizing: border-box;
 }
+img{
+  width:100%;
+  height:auto;
+  object-fit: contain;
+}
 
-.menu-container {
-  padding 20px 0;
+.container-fluid {
+  padding 0 0;
   display: flex;
-  column-gap: 3em;
-  object-fit:
-    margin: 0 auto;
+  margin: 0 auto;
   width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -33,16 +37,26 @@
 .navbar .navbar-collapse {
   text-align: center;
 }
+.navbar img{
+  width:50%;
+  height: auto;
+  object-fit: contain;
+}
 .page{
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: auto;
 }
 .generate-box{
   display:flex;
+  flex-direction: column;
   align-items: center;
 }
-button {
+
+
+
+.page button {
   background-image: url(images/button.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -53,7 +67,7 @@ button {
 
 }
 
-button:hover {
+.page button:hover {
   background-image: url(images/button-click.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -64,35 +78,62 @@ button:hover {
 
 }
 
-button:active {
+.page button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 
-button span {
+.page button span {
   display: none;
+  border: none;
 }
 
-.color-boxes {
-  width: 90%;
-  padding:1.5em;
-  margin-left: 1.5em;
+.color-boxes{
   display: flex;
+  flex-direction: row;
 }
 
-.color-box{
 
-}
 
 .color-boxes .color-box .img { width: 100%; height: 100%; background-color: #C60; }
-.dashboard-buttons .sessions .img { -webkit-mask-image: url(/images/color_block.png); }
+.color-boxes .color-box .img { -webkit-mask-image: url('/images/color_block.png'); }
+
+
+.banner-text {
+  position: relative;
+  text-align: center;
+  color: rgba(0,0,0,.5);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Mobile Styles */
-@media only screen and (max-width: 401px) {}
+@media only screen and (max-width: 401px) {
+  .navbar img{
+    width:100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+}
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .navbar img{
+    width:100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {}

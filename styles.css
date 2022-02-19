@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  padding 20px 0;
+  display: flex;
+  column-gap: 3em;
+  object-fit:
+    margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-outline-success {
+  color: rgba(0, 0, 0, .5);
+  background-color: transparent;
+  background-image: none;
+  border-color: rgba(0, 0, 0, .5);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, .5);
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+  font-family: Helvetica, Arial, Geneva, sans-serif !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.page{
+  display: flex;
+  align-items: center;
+}
+.generate-box{
+  display:flex;
+  align-items: center;
+}
+button {
+  background-image: url(images/button.PNG);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* put the height and width of your image here */
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+
+button span {
+  display: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 401px) {}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {}

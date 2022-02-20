@@ -22,7 +22,14 @@ http.onreadystatechange = function() {
       console.log(palette[i]);
       result = ""
       result += "<div class='color-box'> <div class='img' id='color" + i + "'></div>";
-      currColor = "#" + palette[i][0].toString(16) + palette[i][1].toString(16) + palette[i][2].toString(16)
+      currColor = "#";
+      for (let j = 0; j < 3; j++) {
+        let hexNum = palette[i][j].toString(16);
+        if (hexNum.length < 2) {
+          hexNum = "0" + hexNum;
+        }
+        currColor += hexNum;
+      }
       result += "<p>Color: " + currColor + "</p>";
       result += "</div>";
       document.getElementById("colorResults").innerHTML += result;

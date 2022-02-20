@@ -88,16 +88,17 @@ img{
   display: none;
   border: none;
 }
-
-.color-boxes{
-  display: flex;
+#colorResults{
+  display:flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: auto;
 }
 
-
-
-.color-boxes .color-box .img { width: 100%; height: 100%; background-color: #C60;}
-.color-boxes .color-box .img { -webkit-mask-image: url('/images/color_block.png'); }
+.color-box .img { width: 100%; height: 100%; background-color: #C60;}
+.color-box .img { -webkit-mask-image: url('/images/color_block.png'); }
 
 
 .banner-text {

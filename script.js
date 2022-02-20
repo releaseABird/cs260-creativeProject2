@@ -5,17 +5,20 @@ document.getElementById("colorSubmit").addEventListener("click", function(event)
   const url = "http://colormind.io/api/";
   var data = {
   model : "default",
-	input : [[44,43,44],[90,83,82],"N","N","N"]
+	input : ["N","N","N","N","N"]
 }
 
 var http = new XMLHttpRequest();
 
+
+fetch(url)
 http.onreadystatechange = function() {
 	if(http.readyState == 4 && http.status == 200) {
 		var palette = JSON.parse(http.responseText).result;
     console.log(palette);
     //let results = "";
-    document.getElementById("colorResults").innerHTML = "<div class='color-boxes'>";
+    //document.getElementById("colorResults").innerHTML = "<div class='color-boxes'>";
+    document.getElementById("colorResults").innerHTML = "";
     currColor="";
     for (let i = 0; i < 5; i++){
       console.log(palette[i]);
@@ -35,10 +38,8 @@ http.onreadystatechange = function() {
       document.getElementById('color'+ i).style.width = "100px";
       //document.getElementById("color" + i).style.color = "#" + palette[i][0] + palette[i][1] + palette[i][2];
     }
+    //document.getElementById("colorResults").innerHTML += "</div>";
 
-
-
-    document.getElementById("colorResults").innerHTML += "</div>";
 
     //console.log(results);
     //document.getElementById("colorResults").innerHTML = results;

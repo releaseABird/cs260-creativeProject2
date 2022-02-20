@@ -100,6 +100,42 @@ img{
 .color-box .img { width: 100%; height: 100%; background-color: #C60;}
 .color-box .img { -webkit-mask-image: url('/images/color_block.png'); }
 
+.pic1 {
+  position: relative;
+  width:600px;
+  height:600px;
+
+}
+
+.pic1 img{
+  position:absolute;
+}
+
+#ball0 {
+  background:#000;
+  -webkit-mask:url("/images/pic/color1.png") center/contain;
+          mask:url("/images/pic/color1.png") center/contain;
+}
+#ball1 {
+  background:#000;
+  -webkit-mask:url("/images/pic/color2.png") center/contain;
+          mask:url("/images/pic/color2.png") center/contain;
+}
+#ball2 {
+  background:#000;
+  -webkit-mask:url("/images/pic/color3.png") center/contain;
+          mask:url("/images/pic/color3.png") center/contain;
+}
+#ball3 {
+  background:#000;
+  -webkit-mask:url("/images/pic/color4.png") center/contain;
+          mask:url("/images/pic/color4.png") center/contain;
+}
+#ball4 {
+  background:#000;
+  -webkit-mask:url("/images/pic/color5.png") center/contain;
+          mask:url("/images/pic/color5.png") center/contain;
+}
 
 .banner-text {
   position: relative;
@@ -112,6 +148,15 @@ img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about-container {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 /* Mobile Styles */

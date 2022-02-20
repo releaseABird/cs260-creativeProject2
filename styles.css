@@ -57,7 +57,7 @@ img{
 
 
 .page button {
-  background-image: url(images/button.png);
+  background-image: url(/images/button.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 242px;
@@ -68,7 +68,7 @@ img{
 }
 
 .page button:hover {
-  background-image: url(images/button-click.png);
+  background-image: url(/images/button-click.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 242px;
@@ -104,6 +104,7 @@ img{
   position: relative;
   width:600px;
   height:600px;
+  border: 5px solid #555;
 
 }
 
@@ -112,27 +113,27 @@ img{
 }
 
 #ball0 {
-  background:#000;
+  background:#ffffff;
   -webkit-mask:url("/images/pic/color1.png") center/contain;
           mask:url("/images/pic/color1.png") center/contain;
 }
 #ball1 {
-  background:#000;
+  background:#ffffff;
   -webkit-mask:url("/images/pic/color2.png") center/contain;
           mask:url("/images/pic/color2.png") center/contain;
 }
 #ball2 {
-  background:#000;
+  background:#ffffff;
   -webkit-mask:url("/images/pic/color3.png") center/contain;
           mask:url("/images/pic/color3.png") center/contain;
 }
 #ball3 {
-  background:#000;
+  background:#ffffff;
   -webkit-mask:url("/images/pic/color4.png") center/contain;
           mask:url("/images/pic/color4.png") center/contain;
 }
 #ball4 {
-  background:#000;
+  background:#ffffff;
   -webkit-mask:url("/images/pic/color5.png") center/contain;
           mask:url("/images/pic/color5.png") center/contain;
 }
